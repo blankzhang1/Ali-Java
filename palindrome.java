@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 class palindrome { 
     static boolean isPalindrome(int i) {
+        if (i < 0)
+            return false;
+        else if (i == 0)
+            return true;
         String p = String.valueOf(i);
         int front = 0, back = p.length() - 1; 
         while (front < back) { 
